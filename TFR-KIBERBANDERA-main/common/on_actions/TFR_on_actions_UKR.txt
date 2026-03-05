@@ -1,0 +1,49 @@
+on_capitulation = {
+    effect = {
+        if = {
+            limit = {
+                FROM = { tag = UKR }
+                SOV = { has_country_flag = SOV_cprf_won }
+            }
+
+            transfer_state = {
+            state = 93
+            target = UKR
+        }
+
+            93 = {
+            set_demilitarized_zone = yes
+        }
+
+            UKR = {
+            every_idea = {
+            remove_ideas = PREV}
+        }
+
+            UKR = {
+
+            retire_country_leader = yes
+
+            create_country_leader = {
+            name = "\"Hrytsak\""
+            ideology = intergral_nationalism
+            desc = "UIA_HRYTSAK_DESC"
+            picture = "GFX_portrait_hrytsak"
+            traits = { hog_god_machine }
+
+            traits = { winter_expert }
+            skill = 4
+            attack_skill = 5
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+            
+             }
+        }
+
+            UKR = {
+                country_event = { id = ukr_exile.1 }
+            }
+        }
+    }
+}

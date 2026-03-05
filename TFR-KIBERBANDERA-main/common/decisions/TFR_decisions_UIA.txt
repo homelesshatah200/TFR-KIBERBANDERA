@@ -1,0 +1,22 @@
+	UIA_cross_border_ops = {
+    UIA_major_sabotage_sov = {
+    icon = GFX_khohol_mod
+    cost = 150
+
+    available = {
+        has_completed_focus = UIA_operation_navylnko
+    }
+
+    complete_effect = {
+        SOV = {
+            country_event = { id = UIA_SOV.1 }
+        }
+        country_event = { id = UIA_SOV.2 } 
+    }
+
+    days_remove = 10
+    days_re_enable = 30
+    fire_only_once = no
+     } 
+		
+	}

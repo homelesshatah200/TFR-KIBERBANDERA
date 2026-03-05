@@ -1,0 +1,97 @@
+characters = {
+    UIA_hrytsak = {
+		portraits = {
+			army = {
+				large = "gfx/leaders/UIA/leaders/Hrytsak.png"
+			}
+			civilian = {
+				large = "gfx/leaders/UIA/Hrytsak.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				winter_expert
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		country_leader = {
+			ideology = intergral_nationalism
+			expire = "1.1.1.1"
+			traits = {
+				hog_god_machine
+			}
+		}
+	}
+	    UIA_sergiy = {
+		portraits = {
+			army = {
+				large = "gfx/leaders/UIA/leaders/Sergiy.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				winter_expert
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+		UIA_yaroslav = {
+		portraits = {
+			army = {
+				large = "gfx/leaders/UIA/leaders/Yaroslav2.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				winter_expert
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+		UIA_blendov = {
+		portraits = {
+			army = {
+				large = "gfx/leaders/UIA/leaders/Blendov.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				winter_expert
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+			UIA_fystein = {
+		portraits = {
+			army = {
+				large = "gfx/leaders/UIA/leaders/Fystein.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				winter_expert
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+}

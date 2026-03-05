@@ -1,0 +1,23 @@
+# khoholmod events vs bomzh khatak also if ur reading this get doxxed kid
+
+add_namespace = uia_exile
+
+country_event = {
+    id = uia_exile.1
+    title = uia.1.t
+    desc = uia.1.d
+    picture = GFX_azov_bandera
+
+    is_triggered_only = yes
+
+    option = {
+        name = uia.1.o	
+
+        TRA = {
+            add_political_power = 200
+            set_war_support = 0.2
+            add_stability = 0.1
+        }
+    }
+}
+

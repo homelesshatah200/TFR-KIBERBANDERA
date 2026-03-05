@@ -1,0 +1,19 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_UIA_once_again"
+		texturefile = "gfx/interface/goals/UIA/UIA_once_again.png"
+	}
+		SpriteType = {
+		name = "GFX_UIA_reform_oun_exile"
+		texturefile = "gfx/interface/goals/UIA/UIA_reform_oun_exile.png"
+	}
+		SpriteType = {
+		name = "GFX_UIA_heart_of_steel"
+		texturefile = "gfx/interface/goals/UIA/UIA_heart_of_steel.png"
+	}
+		SpriteType = {
+		name = "GFX_UIA_take_control"
+		texturefile = "gfx/interface/goals/UIA/UIA_take_control.png"
+	}
+	
+}

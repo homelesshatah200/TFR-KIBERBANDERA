@@ -1,0 +1,7 @@
+﻿l_english:
+ #UIA
+ UIA_HRYTSAK:0 "\"Hrytsak\""
+ UIA_BLENDOV:0 "Maxim Blendov"
+ UIA_SERGIY:0 "Sergiy Whiteguard"
+ UIA_YAROSLAV:0 "Yaroslav Skobar"
+ UIA_FYSTEIN:0 "Fushtey Konstantin"

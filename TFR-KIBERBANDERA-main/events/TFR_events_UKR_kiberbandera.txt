@@ -1,0 +1,154 @@
+# khoholmod events vs bomzh khatak also if ur reading this get doxxed kid
+
+country_event = {
+    id = uia_exile.1
+    title = uia.1.t
+    desc = uia.1.d
+    picture = GFX_azov_bandera
+
+    is_triggered_only = yes
+
+    option = {
+        name = uia.1.o
+
+        UKR = {
+            set_country_flag = ukr_exile_government
+            clr_country_flag = capitulated
+            add_political_power = 200
+            set_war_support = 0.2
+            add_stability = 0.1
+        }
+    }
+    id = uia.2
+    title = uia.2.t
+    desc = uia.2.d
+    picture = GFX_azov_bandera
+
+    is_triggered_only = yes
+
+    option = {
+        name = uia.2.o
+
+        UIA = {
+            add_political_power = 55
+            add_field_marshal_role = UIA_hrytsak
+            add_corps_commander_role = UIA_blendov
+            add_corps_commander_role = UIA_sergiy
+            add_corps_commander_role = UIA_fystein
+            add_corps_commander_role = UIA_yaroslav
+        }
+    }
+    id = uia.3
+    title = uia.3.t
+    desc = uia.3.d
+    picture = GFX_azov_bandera
+
+    is_triggered_only = yes
+
+    option = {
+        name = uia.3.o
+
+        UIA = {
+            add_political_power = 10
+        }
+    }
+    id = uia.4
+    title = uia.4.t
+    desc = uia.4.d
+    picture = GFX_azov_bandera
+
+    is_triggered_only = yes
+
+    option = {
+        name = uia.4.o
+
+        UIA = {
+            add_political_power = 10
+        }
+    }
+    id = uia.5
+    title = uia.5.t
+    desc = uia.5.d
+    picture = GFX_azov_bandera
+
+    is_triggered_only = yes
+
+    option = {
+        name = uia.5.o
+
+        UIA = {
+            add_political_power = 10
+        }
+    }
+    id = uia.6
+    title = uia.6.t
+    desc = uia.6.d
+    picture = GFX_azov_bandera
+
+    is_triggered_only = yes
+
+    option = {
+        name = uia.6.o
+
+        UIA = {
+            add_political_power = 10
+        }
+    }
+    id = uia.7
+    title = uia.7.t
+    desc = uia.7.d
+    picture = GFX_azov_bandera
+
+    is_triggered_only = yes
+
+    option = {
+        name = uia.7.o
+
+        UIA = {
+            add_political_power = 10
+        }
+    }
+    id = uia.8
+    title = uia.8.t
+    desc = uia.8.d
+    picture = GFX_azov_bandera
+
+    is_triggered_only = yes
+
+    option = {
+        name = uia.8.o
+
+        UIA = {
+            add_political_power = 10
+        }
+    }
+    id = uia.9
+    title = uia.9.t
+    desc = uia.9.d
+    picture = GFX_azov_bandera
+
+    is_triggered_only = yes
+
+    option = {
+        name = uia.9.o
+
+        UIA = {
+            add_political_power = 10
+        }
+    }
+    id = uia.10
+    title = uia.10.t
+    desc = uia.10.d
+    picture = GFX_azov_bandera
+
+    is_triggered_only = yes
+
+    option = {
+        name = uia.10.o
+
+        UIA = {
+            add_political_power = 10
+        }
+    }
+}
+

@@ -1,0 +1,85 @@
+focus_tree = {
+	id = UKR_kiberbandera
+	country = {
+		base = 0
+		modifier = {
+			add = 10
+			tag = UKR
+		}
+	}
+    focus = {
+        id = UKR_once_again
+        icon = GFX_UIA_once_again
+        x = 6
+        y = 0
+        cost = 3
+        available = {
+            has_country_flag = ukr_exile_government
+            NOT = { has_country_flag = UKR_tree_1_complete }
+        }
+        completion_reward = {
+            add_stability = 0.25
+            add_war_support = 0.1
+            add_political_power = 250
+            add_command_power = 100
+        }
+    }
+
+    focus = {
+        id = UKR_reform_oun_exile
+        icon = GFX_UIA_reform_oun_exile
+        x = 6
+        y = 1
+        cost = 7
+        prerequisite = { focus = UKR_once_again }
+        completion_reward = {      
+            add_stability = 0.05
+            add_war_support = 0.05
+            add_political_power = 25
+            add_command_power = 25
+            add_army_experience = 50
+            add_tech_bonus = {bonus = 0.25 uses = 1 category = infantry_tech}
+			add_tech_bonus = {bonus = 0.25 uses = 1 category = support_tech}
+			add_doctrine_cost_reduction = {cost_reduction = 0.5 uses = 1 category = land_doctrine} 
+            country_event = { id = uia.2 days = 5 }   
+        }
+    }
+
+    focus = {
+        id = UKR_heart_of_steel
+        icon = GFX_UIA_heart_of_steel
+        x = 8
+        y = 1
+        cost = 7
+        prerequisite = { focus = UKR_once_again }
+        completion_reward = {
+            add_stability = 0.10
+            add_war_support = 0.15
+            add_political_power = 100
+            add_army_experience = 25     
+            country_event = { id = uia.6 days = 5 }   
+        }
+    }
+
+    focus = {
+        id = UKR_take_control
+        icon = GFX_UIA_take_control
+        x = 6
+        y = 2
+        cost = 7
+        prerequisite = {
+            focus = UKR_reform_oun_exile
+            focus = UKR_heart_of_steel
+        }
+        completion_reward = {
+            add_stability = 0.10
+            add_war_support = 0.05
+            add_political_power = 100
+            add_command_power = 50
+            add_army_experience = 25             
+            set_country_flag = UKR_tree_1_complete
+            country_event = { id = uia.10 days = 7 }   
+        }
+        hide_completed_focus = yes
+    }
+}

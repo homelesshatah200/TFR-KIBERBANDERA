@@ -1,0 +1,6 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_azov_bandera"     
+		texturefile = "gfx/event_pictures/azov_bandera.png"    
+	}
+}
