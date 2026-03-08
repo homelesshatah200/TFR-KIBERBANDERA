@@ -225,7 +225,7 @@ focus_tree = {
         cost = 7
         prerequisite = {
             focus = UKR_nation_luddite_partisans}
-        mutually_exclusive = { UKR_secure_nation_for_people }
+        mutually_exclusive = {focus = UKR_secure_nation_for_people}
         completion_reward = {
             add_political_power = 100
         }
@@ -238,7 +238,7 @@ focus_tree = {
         cost = 7
         prerequisite = {
             focus = UKR_nation_luddite_partisans}
-        mutually_exclusive = { UKR_reach_compromise }
+        mutually_exclusive = {focus = UKR_reach_compromise}
         completion_reward = {
             add_political_power = 100
         }
