@@ -1,0 +1,111 @@
+	UKR_cross_border_ops = {
+    UKR_sabotage_operations = {
+    icon = GFX_khohol_mod
+    cost = 25
+
+    available = {
+        has_completed_focus = UKR_take_control
+    }
+
+    complete_effect = {
+        random_list = {
+            70 = {
+                country_event = { id = ukr_cross_border_success }
+            }
+            30 = {
+                country_event = { id = ukr_cross_border_failure }
+            }
+        }
+    }
+
+    days_remove = 10
+    days_re_enable = 30
+    fire_only_once = no
+     }
+
+    UKR_steal_hidden_armouries = {
+    icon = GFX_khohol_mod
+    cost = 35
+
+    available = {
+        has_completed_focus = UKR_take_control
+    }
+
+    complete_effect = {
+        random_list = {
+            70 = {
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment_2
+                    amount = 20000
+                }
+            }
+            30 = {
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment_1
+                    amount = 5000
+                }
+            }
+        }
+    }
+
+    days_remove = 5
+    days_re_enable = 10
+    fire_only_once = no
+     }
+
+    UKR_cross_border_raids = {
+    icon = GFX_khohol_mod
+    cost = 75
+
+    available = {
+        has_completed_focus = UKR_take_control
+    }
+
+    complete_effect = {
+        random_list = {
+            70 = {
+                SOV = {
+                    add_war_support = -0.1
+                    add_manpower = -1250
+                    damage_building = {
+                        type = arms_factory
+                        damage = 0.3
+                    }
+                }
+            }
+            30 = {
+                add_stability = -0.05
+            }
+        }
+    }
+
+    days_remove = 15
+    days_re_enable = 45
+    fire_only_once = no
+     }
+
+    UKR_assassination_missions = {
+    icon = GFX_khohol_mod
+    cost = 250
+
+    available = {
+        has_completed_focus = UKR_take_control
+    }
+
+    complete_effect = {
+        random_list = {
+            50 = {
+                country_event = { id = ukr_assassination_success }
+            }
+            30 = {
+                country_event = { id = ukr_assassination_failure }
+            }
+        }
+    }
+
+    days_remove = 35
+    days_re_enable = 125
+    fire_only_once = no
+     } 
+		
+	}
