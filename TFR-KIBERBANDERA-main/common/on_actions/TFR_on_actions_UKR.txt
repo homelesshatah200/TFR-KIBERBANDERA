@@ -11,7 +11,7 @@ on_capitulation = {
             target = UKR
         }
 
-            93 = {
+            state = 93 {
             set_demilitarized_zone = yes
         }
 
@@ -26,19 +26,22 @@ on_capitulation = {
 
             create_country_leader = {
             name = "\"Hrytsak\""
-            ideology = intergral_nationalism
+            ideology = integral_nationalism
             desc = "UIA_HRYTSAK_DESC"
             picture = "GFX_portrait_hrytsak"
-            traits = { hog_god_machine }
+            traits = {hog_god_machine}
+            }
 
-            traits = { winter_expert }
+            create_field_marshal = {
+            name = "\"Hrytsak\""
+            picture = "GFX_portrait_hrytsak"
+            traits = { winter_expert defensive_doctrine }
             skill = 4
             attack_skill = 5
-			defense_skill = 3
-			planning_skill = 1
-			logistics_skill = 2
-            
-             }
+            defense_skill = 3
+            planning_skill = 5
+            logistics_skill = 4
+            }
         }
 
             UKR = {
