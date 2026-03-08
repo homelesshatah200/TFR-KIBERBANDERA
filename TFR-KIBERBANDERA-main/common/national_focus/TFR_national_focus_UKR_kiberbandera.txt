@@ -82,4 +82,195 @@ focus_tree = {
         }
         hide_completed_focus = yes
     }
-}
+        focus = {
+        id = UKR_time_is_now
+        icon = GFX_UKR_time_is_now
+        x = 6
+        y = 4
+        cost = 7
+        available = {
+        has_country_flag = ukr_ecofacist_path
+        }
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+        focus = {
+        id = UKR_hang_katsap
+        icon = GFX_UKR_hang_katsap
+        x = 5
+        y = 5
+        cost = 7
+        prerequisite = {
+            focus = UKR_time_is_now}
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+        focus = {
+        id = UKR_ideas_saint_brenton
+        icon = GFX_UKR_ideas_saint_brenton
+        x = 7
+        y = 5
+        cost = 7
+        prerequisite = {
+            focus = UKR_time_is_now}
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+        focus = {
+        id = UKR_our_national_idea
+        icon = GFX_UKR_our_national_idea
+        x = 6
+        y = 6
+        cost = 7
+        prerequisite = {
+            focus = UKR_ideas_saint_brenton
+            focus = UKR_hang_katsap}
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+        focus = {
+        id = UKR_slavic_acceleration
+        icon = GFX_UKR_slavic_acceleration
+        x = 5
+        y = 7
+        cost = 7
+        prerequisite = {
+            focus = UKR_our_national_idea}
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+        focus = {
+        id = UKR_runes_of_perun
+        icon = GFX_UKR_runes_of_perun
+        x = 7
+        y = 7
+        cost = 7
+        prerequisite = {
+            focus = UKR_our_national_idea}
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+        focus = {
+        id = UKR_heart_to_sun
+        icon = GFX_UKR_heart_to_sun
+        x = 2
+        y = 5
+        cost = 7
+        prerequisite = {
+            focus = UKR_time_is_now}
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+        focus = {
+        id = UKR_heroes_purity
+        icon = GFX_UKR_heroes_purity
+        x = 1
+        y = 6
+        cost = 7
+        prerequisite = {
+            focus = UKR_heart_to_sun}
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+        focus = {
+        id = UKR_blood_of_nation
+        icon = GFX_UKR_blood_of_nation
+        x = 3
+        y = 6
+        cost = 7
+        prerequisite = {
+            focus = UKR_heart_to_sun}
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+        focus = {
+        id = UKR_hammer_degeneracy
+        icon = GFX_UKR_hammer_degeneracy
+        x = 2
+        y = 7
+        cost = 7
+        prerequisite = {
+            focus = UKR_heroes_purity
+            focus = UKR_blood_of_nation}
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+        focus = {
+        id = UKR_nation_luddite_partisans
+        icon = GFX_UKR_nation_luddite_partisans
+        x = 10
+        y = 5
+        cost = 7
+        prerequisite = {
+            focus = UKR_time_is_now}
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+        focus = {
+        id = UKR_reach_compromise
+        icon = GFX_UKR_reach_compromise
+        x = 9
+        y = 6
+        cost = 7
+        prerequisite = {
+            focus = UKR_nation_luddite_partisans}
+        mutually_exclusive = { UKR_secure_nation_for_people }
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+        focus = {
+        id = UKR_secure_nation_for_people
+        icon = GFX_UKR_secure_nation_for_people
+        x = 11
+        y = 6
+        cost = 7
+        prerequisite = {
+            focus = UKR_nation_luddite_partisans}
+        mutually_exclusive = { UKR_reach_compromise }
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+        focus = {
+        id = UKR_slavic_paradise
+        icon = GFX_UKR_slavic_paradise
+        x = 10
+        y = 7
+        cost = 7
+        available = {
+        OR = {
+            has_completed_focus = UKR_reach_compromise
+            has_completed_focus = UKR_secure_nation_for_people}
+        }
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+        focus = {
+        id = UKR_father_bandera
+        icon = GFX_UKR_father_bandera
+        x = 6
+        y = 8
+        cost = 7
+        prerequisite = {
+            focus = UKR_slavic_acceleration
+            focus = UKR_runes_of_perun
+            focus = UKR_hammer_degeneracy
+            focus = UKR_slavic_paradise}
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+}    
