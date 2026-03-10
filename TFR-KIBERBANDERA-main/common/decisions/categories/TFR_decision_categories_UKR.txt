@@ -1,0 +1,20 @@
+	UKR_cross_border_ops = {
+		icon = GFX_decision_category_UKR_cross_border_ops 
+		picture = GFX_decision_cat_UKR_cross_border_ops
+		visible_when_empty = yes
+		allowed = {
+			tag = UKR
+		}	
+
+	    visible = {
+        has_completed_focus = UKR_take_control
+        }
+			#NOT = {
+			#	OR = {
+			#		has_completed_focus = SOV_29th_soviet_congress
+			#		has_completed_focus = SOV_triumph_of_zhirinovsky
+			#		has_country_flag = SOV_grand_constitutional_reformation_flag
+			#	}
+			#}
+		}
+	}
