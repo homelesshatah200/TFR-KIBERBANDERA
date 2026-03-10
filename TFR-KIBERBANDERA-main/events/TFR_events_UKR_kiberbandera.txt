@@ -30,13 +30,12 @@ country_event = {
         name = uia.2.o
 
         UIA = {
-            add_political_power = 55
-            add_field_marshal_role = UIA_hrytsak
+            add_political_power = 50
+            add_war_support = 0.1
             add_corps_commander_role = UIA_blendov
-            add_corps_commander_role = UIA_sergiy
             add_corps_commander_role = UIA_fystein
-            add_corps_commander_role = UIA_yaroslav
         }
+        country_event = { id = uia.3 days = 7 }
     }
     id = uia.3
     title = uia.3.t
@@ -50,35 +49,56 @@ country_event = {
 
         UIA = {
             add_political_power = 10
+            add_command_power = 10
+        }
+    }
+    option = {
+        name = uia.3.a
+
+        UIA = {
+            add_stability = 0.05
+            add_war_support = 0.05
+            add_command_power = 10
+        }
+    }
+    option = {
+        name = uia.3.b
+
+        UIA = {
+            add_political_power = 25
         }
     }
     id = uia.4
     title = uia.4.t
     desc = uia.4.d
-    picture = GFX_azov_bandera
+    picture = GFX_UKR_focus_event
 
     is_triggered_only = yes
 
     option = {
         name = uia.4.o
-
-        UIA = {
-            add_political_power = 10
-        }
+        add_stability = 0.05
+        add_political_power = 50
+        country_event = { id = uia.5 days = 7 }
     }
     id = uia.5
     title = uia.5.t
     desc = uia.5.d
-    picture = GFX_azov_bandera
+    picture = GFX_UKR_focus_event
 
     is_triggered_only = yes
 
     option = {
         name = uia.5.o
-
-        UIA = {
-            add_political_power = 10
-        }
+        add_political_power = 75
+        add_stability = 0.15
+    }
+    option = {
+        name = uia.5.a
+        add_political_power = -50
+        add_command_power = 35
+        add_army_experience = 150
+        set_country_flag = UKR_ecofacist_path_buff
     }
     id = uia.6
     title = uia.6.t
@@ -92,6 +112,8 @@ country_event = {
 
         UIA = {
             add_political_power = 10
+            add_corps_commander_role = UIA_sergiy
+            add_corps_commander_role = UIA_yaroslav            
         }
     }
     id = uia.7
@@ -108,6 +130,14 @@ country_event = {
             add_political_power = 10
         }
     }
+    option = {
+        name = uia.7.a
+
+        UIA = {
+            add_stability = -0.15
+            set_country_flag = UKR_ecofacist_path
+        }
+    }   
     id = uia.8
     title = uia.8.t
     desc = uia.8.d
@@ -149,6 +179,67 @@ country_event = {
         UIA = {
             add_political_power = 10
         }
+    }
+
+    id = ukr_cross_border_success
+    title = ukr_cross_border_success.t
+    desc = ukr_cross_border_success.d
+    picture = GFX_azov_bandera
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukr_cross_border_success.o
+
+        SOV = {
+            add_war_support = -0.1
+            damage_building = {
+                type = arms_factory
+                damage = 0.3
+            }
+        }
+    }
+
+    id = ukr_cross_border_failure
+    title = ukr_cross_border_failure.t
+    desc = ukr_cross_border_failure.d
+    picture = GFX_azov_bandera
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukr_cross_border_failure.o
+
+        add_stability = -0.05
+    }
+
+    id = ukr_assassination_success
+    title = ukr_assassination_success.t
+    desc = ukr_assassination_success.d
+    picture = GFX_azov_bandera
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukr_assassination_success.o
+
+        SOV = {
+            random_kill_general = yes
+            add_stability = -0.15
+        }
+    }
+
+    id = ukr_assassination_failure
+    title = ukr_assassination_failure.t
+    desc = ukr_assassination_failure.d
+    picture = GFX_azov_bandera
+
+    is_triggered_only = yes
+
+    option = {
+        name = ukr_assassination_failure.o
+
+        add_stability = -0.1
     }
 }
 
